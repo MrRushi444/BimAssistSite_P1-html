@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="navigation-bar">
+      <div class="navbar">
+        <img class="main-Logo" src="./images/capricot_logo_white.png" alt="" />
+
+        <div class="contacts">
+          <ul class="contact-List">
+            <li class="contact-emailList" id="emailLink">
+              <a
+                href="mailto:bimassist@capricot.com"
+                style="text-decoration: none"
+                class="mailTO"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="white"
+                  class="bi bi-envelope"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                  />
+                </svg>
+                <span class="mailTO" style="color: white">
+                  bimassist@capricot.com</span
+                >
+              </a>
+            </li>
+            <li class="contact-phoneList" id="phoneNumber">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-telephone"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                />
+              </svg>
+
+              +91 22-2606-5001
+            </li>
+          </ul>
+        </div>
+        <!-- Menu For Desktop -->
+        <div class="menu">
+          <ul class="menu-List">
+            <li class="menu-ListItem">Home</li>
+            <li class="menu-ListItem">About</li>
+            <li class="menu-ListItem">
+              Services
+              <ul class="dropdown-Content">
+                <li><a href="#">BIM Implementation</a></li>
+                <li><a href="#">Resource Depolyment</a></li>
+                <li><a href="#">BIM Project Outsourcing</a></li>
+                <li><a href="#">Content Creation</a></li>
+                <li><a href="#">AEC Autodesk Cloud Training</a></li>
+                <li><a href="#">Scan to BIM</a></li>
+                <li><a href="#">Customization</a></li>
+              </ul>
+            </li>
+            <li class="menu-ListItem">
+              Industries
+              <ul class="dropdown-Content">
+                <li><a href="#">Healthcare</a></li>
+                <li><a href="#">Educational</a></li>
+                <li><a href="#">Residential</a></li>
+                <li><a href="#">Retail</a></li>
+                <li><a href="#">Infrastructure</a></li>
+                <li><a href="#">Data Center</a></li>
+                <li><a href="#">Hotel</a></li>
+                <li><a href="#">Pharma</a></li>
+                <li><a href="#">Commercial</a></li>
+              </ul>
+            </li>
+            <li class="menu-ListItem">
+              Resources
+              <ul class="dropdown-Content">
+                <li><a href="#">Our Portfolio</a></li>
+                <li><a href="#">Webinars</a></li>
+                <li><a href="#">Whats New !</a></li>
+              </ul>
+            </li>
+            <li class="menu-ListItem">Blog</li>
+            <li class="menu-ListItem">Contact-Us</li>
+          </ul>
+        </div>
+        <!-- For Desktop View Ends Here -->
+
+        <!-- For Mobile View -->
+        <input type="checkbox" id="active" />
+        <label for="active" class="menu-btn"><span></span></label>
+        <label for="active" class="close"></label>
+        <div class="wrapper">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Industries</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">ContactUS</a></li>
+          </ul>
+        </div>
+        <!-- For Mobile View Ends Here -->
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 class="hero-title">BIM ASSIST</h1>
+        <p class="hero-detail">
+          Your First Step Towards Digital<br class="breakForHero-detail" />
+          Transformation
+        </p>
+      </div>
+    </div>
+
+    <div class="welcome-section">
+      <div class="welcome-content">
+        <h2 class="welcome-title">[ Welcome ]</h2>
+        <p class="welcome-description">
+          WELCOME TO BIM ASSIST - YOUR TRUSTED BIM SERVICE PROVIDER FOR YOUR
+          PROJECTS.<br />
+          BIM ASSIST IS COMMITTED TO REVOLUTIONIZING BUILDING STRUCTURE,
+          CONSTRUCTION, AND MEPF.<br />
+          <span class="notFor-mobile">
+            AS ONE OF THE MOST RENOWNED BIM SERVICE PROVIDERS WE LEVERAGE
+            BUILDING INFORMATION MODELING TO ENHANCE COLLABORATION, IMPROVE
+            EFFICIENCY, AND REDUCE COSTS.<br />
+            WE SPECIALIZE IN OFFERING OUR CLIENTS WITH COMPREHENSIVE SOLUTIONS
+            FOR THE AEC INDUSTRY WITH A FOCUS ON QUALITY AND EFFICIENCY.
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="division-section">
+      <div class="divSec-1"></div>
+      <div class="divSec-2"></div>
+      <div class="divSec-3"></div>
+    </div>
+
+    <div class="services">
+      <div class="service-title">
+        <h2>[ Services ]</h2>
+      </div>
+      <div class="all-services">
+        <div class="service serviceSec-1">
+          <div class="service-content">
+            <h3><span class="service-Head">BIM Implementation</span></h3>
+            <p class="services-detail">
+              Our BIM Implementation service provides comprehensive data models
+              that allow teams to access a single source and work from the same
+              set of plans. It improves results, accuracy, and performance,
+              leading to cost savings and customer satisfaction.
+            </p>
+          </div>
+        </div>
+        <div class="service serviceSec-2">
+          <div class="service-content">
+            <h3>Resource Depolyment</h3>
+            <p class="services-detail">
+              We have a proven track record of successful resource deployments
+              in projects of all sizes. Our team of professionals has the
+              experience and expertise to get the job done quickly and
+              efficiently. If you partner with us, you can be assured that your
+              project will achieve its full potential.
+            </p>
+          </div>
+        </div>
+        <div class="service serviceSec-3">
+          <div class="service-content">
+            <h3>Project Outsourcing</h3>
+            <p class="services-detail">
+              We ensures that our client project is completed within the given
+              timeline and according to the industry standards. We provide
+              constant updates on the progress of the project at each stage. We
+              take pride in delivering high-quality work to our clients.
+            </p>
+          </div>
+        </div>
+        <div class="service serviceSec-4">
+          <div class="service-content">
+            <h3>Content Creation</h3>
+            <p class="services-detail">
+              With our expertise you can leverage the power of BIM to streamline
+              and enhance content creation processes. Generate accurate and
+              intelligent digital representations, improving collaboration and
+              project outcomes. Simplify design, reduce errors, and optimize
+              construction with BIM Assist.
+            </p>
+          </div>
+        </div>
+        <div class="service serviceSec-5">
+          <div class="service-content">
+            <h3>AEC Autodesk Cloud Training</h3>
+            <p class="services-detail">
+              BIM Assist AEC Cloud training is designed to help you make the
+              most of Autodesk's BIM and AEC cloud-based applications. The
+              training covers the basics of advanced techniques and strategies,
+              allowing you to customize your workflow and get the most out of
+              the cloud-based software.
+            </p>
+          </div>
+        </div>
+        <div class="service serviceSec-6">
+          <div class="service-content">
+            <h3>Scan To BIM</h3>
+            <p class="services-detail">
+              BIM Assist can help you with laser scanning and advanced 3D
+              modeling for Scan to BIM by digitizing physical environments which
+              accurately capture and reflect existing conditions to create
+              detailed BIM models for your projects.
+            </p>
+          </div>
+        </div>
+        <div class="service serviceSec-7">
+          <div class="service-content">
+            <h3>Customization</h3>
+            <p class="services-detail">
+              At BIM Assist, we develop customized tools that integrate
+              seamlessly, minimize costs, and enhance your construction
+              processes. AutoCAD, Revit, BIM 360 Forge we customize it all to
+              optimize your BIM workflow and gain a competitive edge.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="division-section">
+      <div class="divSec-1"></div>
+      <div class="divSec-2"></div>
+      <div class="divSec-3"></div>
+    </div>
+
+    <div class="industries">
+      <!-- For Desktop View -->
+      <h2><span class="indus-Head">[ Industries ]</span></h2>
+      <hr />
+      <div class="grid-container">
+        <a href="#" class="atagFor-indus">
+          <div class="grid-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="150"
+              height="150"
+              fill=""
+              class="bi bi-bricks"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 .5A.5.5 0 0 1 .5 0h15a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5H2v-2H.5a.5.5 0 0 1-.5-.5v-3A.5.5 0 0 1 .5 6H2V4H.5a.5.5 0 0 1-.5-.5v-3zM3 4v2h4.5V4H3zm5.5 0v2H13V4H8.5zM3 10v2h4.5v-2H3zm5.5 0v2H13v-2H8.5zM1 1v2h3.5V1H1zm4.5 0v2h5V1h-5zm6 0v2H15V1h-3.5zM1 7v2h3.5V7H1zm4.5 0v2h5V7h-5zm6 0v2H15V7h-3.5zM1 13v2h3.5v-2H1zm4.5 0v2h5v-2h-5zm6 0v2H15v-2h-3.5z"
+              />
+            </svg>
+            <h4>Infrastructure</h4>
+          </div>
+        </a>
+        <a href="#" class="atagFor-indus">
+          <div class="grid-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="150"
+              height="150"
+              fill=""
+              class="bi bi-mortarboard"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"
+              />
+              <path
+                d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"
+              />
+            </svg>
+            <h4>Education</h4>
+          </div>
+        </a>
+        <a href="#" class="atagFor-indus">
+          <div class="grid-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="150"
+              height="150"
+              fill=""
+              class="bi bi-buildings"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022ZM6 8.694 1 10.36V15h5V8.694ZM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15Z"
+              />
+              <path
+                d="M2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-2 2h1v1H2v-1Zm2 0h1v1H4v-1Zm4-4h1v1H8V9Zm2 0h1v1h-1V9Zm-2 2h1v1H8v-1Zm2 0h1v1h-1v-1Zm2-2h1v1h-1V9Zm0 2h1v1h-1v-1ZM8 7h1v1H8V7Zm2 0h1v1h-1V7Zm2 0h1v1h-1V7ZM8 5h1v1H8V5Zm2 0h1v1h-1V5Zm2 0h1v1h-1V5Zm0-2h1v1h-1V3Z"
+              />
+            </svg>
+            <h4>Residential</h4>
+          </div>
+        </a>
+        <a href="#" class="atagFor-indus">
+          <div class="grid-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="150"
+              height="150"
+              fill=""
+              class="bi bi-shop"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"
+              />
+            </svg>
+            <h4>Retail</h4>
+          </div>
+        </a>
+        <a href="#" class="atagFor-indus">
+          <div class="grid-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="150"
+              height="150"
+              fill="black"
+              class="bi bi-hospital"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM13.25 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Zm.25 1.75a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5Zm-11-4a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 9.75v-.5A.25.25 0 0 0 2.75 9h-.5Zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Z"
+              />
+              <path
+                d="M5 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1V1Zm2 14h2v-3H7v3Zm3 0h1V3H5v12h1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3Zm0-14H6v1h4V1Zm2 7v7h3V8h-3Zm-8 7V8H1v7h3Z"
+              />
+            </svg>
+            <h4>Health Care</h4>
+          </div>
+        </a>
+        <a href="#" class="atagFor-indus">
+          <div class="grid-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="150"
+              height="150"
+              fill=""
+              class="bi bi-database-fill"
+              viewBox="0 0 16 16"
+              style="margin-right: 10"
+            >
+              <path
+                d="M3.904 1.777C4.978 1.289 6.427 1 8 1s3.022.289 4.096.777C13.125 2.245 14 2.993 14 4s-.875 1.755-1.904 2.223C11.022 6.711 9.573 7 8 7s-3.022-.289-4.096-.777C2.875 5.755 2 5.007 2 4s.875-1.755 1.904-2.223Z"
+              />
+              <path
+                d="M2 6.161V7c0 1.007.875 1.755 1.904 2.223C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777C13.125 8.755 14 8.007 14 7v-.839c-.457.432-1.004.751-1.49.972C11.278 7.693 9.682 8 8 8s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972Z"
+              />
+              <path
+                d="M2 9.161V10c0 1.007.875 1.755 1.904 2.223C4.978 12.711 6.427 13 8 13s3.022-.289 4.096-.777C13.125 11.755 14 11.007 14 10v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972Z"
+              />
+              <path
+                d="M2 12.161V13c0 1.007.875 1.755 1.904 2.223C4.978 15.711 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972Z"
+              />
+            </svg>
+            <h4>Date Center</h4>
+          </div>
+        </a>
+        <a href="#" class="atagFor-indus">
+          <div class="grid-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              width="150"
+              height="150"
+              style="margin-right: 10"
+              fill=""
+            >
+              <path
+                d="M480 0C497.7 0 512 14.33 512 32C512 49.67 497.7 64 480 64V448C497.7 448 512 462.3 512 480C512 497.7 497.7 512 480 512H304V448H208V512H32C14.33 512 0 497.7 0 480C0 462.3 14.33 448 32 448V64C14.33 64 0 49.67 0 32C0 14.33 14.33 0 32 0H480zM112 96C103.2 96 96 103.2 96 112V144C96 152.8 103.2 160 112 160H144C152.8 160 160 152.8 160 144V112C160 103.2 152.8 96 144 96H112zM224 144C224 152.8 231.2 160 240 160H272C280.8 160 288 152.8 288 144V112C288 103.2 280.8 96 272 96H240C231.2 96 224 103.2 224 112V144zM368 96C359.2 96 352 103.2 352 112V144C352 152.8 359.2 160 368 160H400C408.8 160 416 152.8 416 144V112C416 103.2 408.8 96 400 96H368zM96 240C96 248.8 103.2 256 112 256H144C152.8 256 160 248.8 160 240V208C160 199.2 152.8 192 144 192H112C103.2 192 96 199.2 96 208V240zM240 192C231.2 192 224 199.2 224 208V240C224 248.8 231.2 256 240 256H272C280.8 256 288 248.8 288 240V208C288 199.2 280.8 192 272 192H240zM352 240C352 248.8 359.2 256 368 256H400C408.8 256 416 248.8 416 240V208C416 199.2 408.8 192 400 192H368C359.2 192 352 199.2 352 208V240zM256 288C211.2 288 173.5 318.7 162.1 360.2C159.7 373.1 170.7 384 184 384H328C341.3 384 352.3 373.1 349 360.2C338.5 318.7 300.8 288 256 288z"
+              />
+            </svg>
+            <h4>Hotels</h4>
+          </div>
+        </a>
+        <a href="#" class="atagFor-indus">
+          <div class="grid-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="150"
+              height="150"
+              fill=""
+              class="bi bi-prescription2"
+              viewBox="0 0 16 16"
+              style="margin-right: 10"
+            >
+              <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2V6Z" />
+              <path
+                d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1V1Zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4H4ZM3 3h10V1H3v2Z"
+              />
+            </svg>
+            <h4>Pharma</h4>
+          </div>
+        </a>
+        <a href="#" class="atagFor-indus">
+          <div class="grid-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="150"
+              height="150"
+              fill=""
+              class="bi bi-building"
+              viewBox="0 0 16 16"
+              style="margin-right: 10"
+            >
+              <path
+                d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"
+              />
+              <path
+                d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z"
+              />
+            </svg>
+            <h4>Commercial</h4>
+          </div>
+        </a>
+      </div>
+
+      <!-- For Mobile View -->
+      <div class="industriesFor-mobile">
+        <div class="all-industries">
+          <a href="#" class="atagFor-indus">
+            <div class="indus indus-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                fill=""
+                class="bi bi-bricks"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 .5A.5.5 0 0 1 .5 0h15a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5H2v-2H.5a.5.5 0 0 1-.5-.5v-3A.5.5 0 0 1 .5 6H2V4H.5a.5.5 0 0 1-.5-.5v-3zM3 4v2h4.5V4H3zm5.5 0v2H13V4H8.5zM3 10v2h4.5v-2H3zm5.5 0v2H13v-2H8.5zM1 1v2h3.5V1H1zm4.5 0v2h5V1h-5zm6 0v2H15V1h-3.5zM1 7v2h3.5V7H1zm4.5 0v2h5V7h-5zm6 0v2H15V7h-3.5zM1 13v2h3.5v-2H1zm4.5 0v2h5v-2h-5zm6 0v2H15v-2h-3.5z"
+                />
+              </svg>
+              <span class="all-IndusHead">Infrastructure</span>
+            </div>
+          </a>
+          <a href="#" class="atagFor-indus">
+            <div class="indus indus-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                fill=""
+                class="bi bi-mortarboard-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"
+                />
+                <path
+                  d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"
+                />
+              </svg>
+              <span class="all-IndusHead">Education</span>
+            </div>
+          </a>
+          <a href="#" class="atagFor-indus">
+            <div class="indus indus-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                fill=""
+                class="bi bi-buildings"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022ZM6 8.694 1 10.36V15h5V8.694ZM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15Z"
+                />
+                <path
+                  d="M2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-2 2h1v1H2v-1Zm2 0h1v1H4v-1Zm4-4h1v1H8V9Zm2 0h1v1h-1V9Zm-2 2h1v1H8v-1Zm2 0h1v1h-1v-1Zm2-2h1v1h-1V9Zm0 2h1v1h-1v-1ZM8 7h1v1H8V7Zm2 0h1v1h-1V7Zm2 0h1v1h-1V7ZM8 5h1v1H8V5Zm2 0h1v1h-1V5Zm2 0h1v1h-1V5Zm0-2h1v1h-1V3Z"
+                />
+              </svg>
+              <span class="all-IndusHead">Residential</span>
+            </div>
+          </a>
+          <a href="#" class="atagFor-indus">
+            <div class="indus indus-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                fill=""
+                class="bi bi-shop"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"
+                />
+              </svg>
+              <span class="all-IndusHead">Retail</span>
+            </div>
+          </a>
+          <a href="#" class="atagFor-indus">
+            <div class="indus indus-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                fill=""
+                class="bi bi-hospital"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM13.25 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Zm.25 1.75a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5Zm-11-4a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 9.75v-.5A.25.25 0 0 0 2.75 9h-.5Zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Z"
+                />
+                <path
+                  d="M5 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1V1Zm2 14h2v-3H7v3Zm3 0h1V3H5v12h1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3Zm0-14H6v1h4V1Zm2 7v7h3V8h-3Zm-8 7V8H1v7h3Z"
+                />
+              </svg>
+              <span class="all-IndusHead">Healthcare</span>
+            </div>
+          </a>
+          <a href="#" class="atagFor-indus">
+            <div class="indus indus-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                fill=""
+                class="bi bi-database-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.904 1.777C4.978 1.289 6.427 1 8 1s3.022.289 4.096.777C13.125 2.245 14 2.993 14 4s-.875 1.755-1.904 2.223C11.022 6.711 9.573 7 8 7s-3.022-.289-4.096-.777C2.875 5.755 2 5.007 2 4s.875-1.755 1.904-2.223Z"
+                />
+                <path
+                  d="M2 6.161V7c0 1.007.875 1.755 1.904 2.223C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777C13.125 8.755 14 8.007 14 7v-.839c-.457.432-1.004.751-1.49.972C11.278 7.693 9.682 8 8 8s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972Z"
+                />
+                <path
+                  d="M2 9.161V10c0 1.007.875 1.755 1.904 2.223C4.978 12.711 6.427 13 8 13s3.022-.289 4.096-.777C13.125 11.755 14 11.007 14 10v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972Z"
+                />
+                <path
+                  d="M2 12.161V13c0 1.007.875 1.755 1.904 2.223C4.978 15.711 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972Z"
+                />
+              </svg>
+              <span class="all-IndusHead">Data Center</span>
+            </div>
+          </a>
+          <a href="#" class="atagFor-indus">
+            <div class="indus indus-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="60"
+                height="60"
+                style="margin-right: 10"
+                class="bi"
+              >
+                <path
+                  d="M480 0C497.7 0 512 14.33 512 32C512 49.67 497.7 64 480 64V448C497.7 448 512 462.3 512 480C512 497.7 497.7 512 480 512H304V448H208V512H32C14.33 512 0 497.7 0 480C0 462.3 14.33 448 32 448V64C14.33 64 0 49.67 0 32C0 14.33 14.33 0 32 0H480zM112 96C103.2 96 96 103.2 96 112V144C96 152.8 103.2 160 112 160H144C152.8 160 160 152.8 160 144V112C160 103.2 152.8 96 144 96H112zM224 144C224 152.8 231.2 160 240 160H272C280.8 160 288 152.8 288 144V112C288 103.2 280.8 96 272 96H240C231.2 96 224 103.2 224 112V144zM368 96C359.2 96 352 103.2 352 112V144C352 152.8 359.2 160 368 160H400C408.8 160 416 152.8 416 144V112C416 103.2 408.8 96 400 96H368zM96 240C96 248.8 103.2 256 112 256H144C152.8 256 160 248.8 160 240V208C160 199.2 152.8 192 144 192H112C103.2 192 96 199.2 96 208V240zM240 192C231.2 192 224 199.2 224 208V240C224 248.8 231.2 256 240 256H272C280.8 256 288 248.8 288 240V208C288 199.2 280.8 192 272 192H240zM352 240C352 248.8 359.2 256 368 256H400C408.8 256 416 248.8 416 240V208C416 199.2 408.8 192 400 192H368C359.2 192 352 199.2 352 208V240zM256 288C211.2 288 173.5 318.7 162.1 360.2C159.7 373.1 170.7 384 184 384H328C341.3 384 352.3 373.1 349 360.2C338.5 318.7 300.8 288 256 288z"
+                />
+              </svg>
+              <span class="all-IndusHead-Hos">Hotels</span>
+            </div>
+          </a>
+          <a href="#" class="atagFor-indus">
+            <div class="indus indus-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                fill=""
+                class="bi bi-prescription2"
+                viewBox="0 0 16 16"
+              >
+                <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2V6Z" />
+                <path
+                  d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1V1Zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4H4ZM3 3h10V1H3v2Z"
+                />
+              </svg>
+              <span class="all-IndusHead">Pharmasutical</span>
+            </div>
+          </a>
+          <a href="#" class="atagFor-indus">
+            <div class="indus indus-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                fill=""
+                class="bi bi-building-gear"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6.5a.5.5 0 0 1-1 0V1H3v14h3v-2.5a.5.5 0 0 1 .5-.5H8v4H3a1 1 0 0 1-1-1V1Z"
+                />
+                <path
+                  d="M4.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm4.386 1.46c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382l.045-.148ZM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"
+                />
+              </svg>
+              <span class="all-IndusHead">Commercial</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-us">
+      <h2 class="why-usHead">[ WHY - Us ]</h2>
+      <p class="why-usDetail">
+        BIM ASSIST FROM CAPRICOT – VINZERO AN ARKANCE COMPANY BRINGS GLOBAL
+        EXPERTISE AND TOP-NOTCH SOLUTION FOR YOU. CAPRICOT – VINZERO, NOW AN
+        ARKANCE COMPANY COMBINED BRINGS GLOBAL REACH IN 18+ COUNTRIES WITH 50+
+        OFFICES & MORE THAN 1300 SOLUTION PROFESSIONALS ACROSS THE WORLD TO GIVE
+        YOU UNPARALLELED COVERAGE.<span class="whyus-NotMobile">
+          THE LARGEST PROFESSIONAL SERVICE TEAM GLOBALLY & WITH BREADTH & DEPTH
+          OF EXPERIENCE WITHIN THE INDUSTRY WE SERVE AND MAXIMIZE THE VALUE OF
+          DEPLOYED TECHNOLOGIES ACROSS THE ENTIRE PROJECT LIFECYCLE, AND
+          PROVIDING VALUE ADDED SERVICES TO DELIVER RICHER PROJECT
+          OUTCOMES.</span
+        >
+      </p>
+    </div>
+
+    <div class="partners">
+      <h2 class="partners-Head">[ Our Top Partners ]</h2>
+
+      <!-- For Desktop View -->
+
+      <div class="partners-images">
+        <img src="./images/autodesk-logo.jpg" />
+        <img class="middle-Img" src="./images/bentley-logo.jpg" />
+        <img src="./images/trimble -logo.jpg" />
+      </div>
+
+      <!-- For Mobile View -->
+
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img
+              src="./images/autodesk-logo.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/bentley-logo.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/trimble -logo.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/autodesk-logo.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/bentley-logo.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/trimble -logo.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/autodesk-logo.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/bentley-logo.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/trimble -logo.jpg"
+              height="100"
+              width="250"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- For Mobile View Ends Here -->
+    </div>
+
+    <!-- Projects Section -->
+    <h2 class="partners-Head">[ Projects ]</h2>
+    <div class="projects">
+      <main id="carousel">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+      </main>
+    </div>
+
+    <div class="projectsFor-MobileView">
+      <div class="pic-ctn">
+        <img src="./images/200xarchiP.png" alt="" class="pic" />
+        <img src="./images/200xcommercialP.png" alt="" class="pic" />
+        <img src="./images/200xdevP.png" alt="" class="pic" />
+        <img src="./images/200xdsP.png" alt="" class="pic" />
+        <img src="./images/200xretailP.png" alt="" class="pic" />
+      </div>
+    </div>
+    <!-- Project Section Ends Here -->
+
+    <div class="container collaborateForm">
+      <div class="mainscreen">
+        <!-- <img src="https://image.freepik.com/free-vector/purple-background-with-neon-frame_52683-34124.jpg"  class="bgimg " alt="">-->
+        <div class="card">
+          <div class="leftside">
+            <img src="" />
+          </div>
+          <div class="rightside">
+            <form action="">
+              <h1>Collaborate With Us</h1>
+              <h2></h2>
+              <p>Name</p>
+              <input type="text" class="inputbox" name="name" required />
+              <p>Phone Number</p>
+              <input
+                type="number"
+                class="inputbox"
+                name="card_number"
+                id="card_number"
+                required
+              />
+              <p>Location</p>
+              <input type="text" class="inputbox" required />
+
+              <p>Email</p>
+              <input type="email" class="inputbox" required />
+
+              <p>Select Profession</p>
+              <select class="inputbox" name="card_type" id="card_type" required>
+                <option value="">--Select--</option>
+                <option value="Visa">Visa</option>
+                <option value="RuPay">RuPay</option>
+                <option value="MasterCard">MasterCard</option>
+              </select>
+
+              <p></p>
+              <button type="submit" class="button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>CAPRICOT TECHNOLOGIES PVT.LTD.</h6>
+            <p class="text-justify">
+              Hi! Life Mall,<br />
+              Office No. 18, 37 and 38, 3rd Floor<br />
+              Phirojshah Mehta Road, Santacruz(West) Mumbai 400 054, India.
+            </p>
+          </div>
+          <hr class="footer-VerticalLine" />
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Services</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="http://scanfcode.com/category/c-language/"
+                  >BIM Implementation</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/front-end-development/"
+                  >Resource Depolyment</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/back-end-development/"
+                  >BIM Project Outsourcing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://scanfcode.com/category/java-programming-language/"
+                  >Content Creation</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/android/"
+                  >AEC Autodesk Cloud Training</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/templates/"
+                  >Scan To BIM</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/templates/"
+                  >Customization</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <hr class="footer-VerticalLine" />
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li>
+                <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                  >Case Study</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2017 All Rights Reserved by
+              <a href="#">CAPRICOT TECHNOLOGIES PVT. LTD. LTD. </a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a class="dribbble" href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
